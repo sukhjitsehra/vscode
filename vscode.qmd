@@ -2,8 +2,8 @@
 
 - In your browser, navigate to [Visual Studio Code download](https://code.visualstudio.com/download) page. The web page displays logos for Windows, macOS, and Linux
 
-- Download the Visual Studio Code installer for Windows/Mac/Linux. Once it is downloaded, run the installer. 
+- Download the VSCode installer for Windows/Mac/Linux. Once it is downloaded, run the installer. 
 
 - After accepting all the requests, press the finish button.
 
-- Open the  Visual Studio Code to verify the installation.
+- Open the  VSCode to verify the installation.
