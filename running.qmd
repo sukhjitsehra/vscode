@@ -1,0 +1,28 @@
+# Getting Started with VS Code
+
+- Open VS Code and then use `File > Open Folder` to open the project folder e.g. `hello-world` folder on your computer.
+- Now, in the `Explorer view`: hover over the title bar and select `New File`.
+- Name the new file `hello.py` by entering it into the new toolbox and pressing `Enter`.
+- Enter the `print('Hello, World!')` Python code in the editor panel. This command uses the print function to display the text Hello, World! when your application is run.
+
+- Save the file by selecting File and save option.
+
+- Now, you are ready to explore and code fun in Visual Studio. 
+
+## Run your application
+Since it's a single line program, you can actually run your application from inside Visual Studio Code. Before that select the Python interpreter, by opening the `Command Palette (Shift + Command + P (Mac) / Ctrl + Shift + P (Windows/Linux))`, start typing the `> Python: Select Interpreter` command to choose the Python interpreter or enter the Path  to the Python interpreter. 
+
+:::{callout-note}
+`> Python: Select Interpreter` will present a list of interpreters that are availabel on your system, those can be used for your project. Best, select the one that you installed recently.
+:::
+
+### Via Terminal:
+
+1. Open the built-in terminal in Visual Studio Code by selecting View and Terminal.
+2. In the new terminal window, run the  `python hello.py` command to run your Python code. `Hello, World!` appears in the terminal window. 
+
+### Via Run Button:
+
+1. Click the `Run Python File in Terminal` **play button** in the top-right side of the editor and `Hello, World!` appears in the terminal window. 
+
+Congratulations! For your first Python program.
