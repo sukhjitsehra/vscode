@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "607c5e57"
+  },
+  "about.qmd": {
+    "about.html": "e27446a9"
+  },
+  "vscode.qmd": {
+    "vscode.html": "65b189a6"
+  },
+  "intro.qmd": {
+    "intro.html": "6a393829"
+  },
+  "python.qmd": {
+    "python.html": "d23eca9f"
+  },
+  "python_extensions.qmd": {
+    "python_extensions.html": "91352363"
+  },
+  "summary.qmd": {
+    "summary.html": "f5df8266"
+  },
+  "running.qmd": {
+    "running.html": "1c2c6092"
+  },
+  "references.qmd": {
+    "references.html": "2d9b34a5"
+  }
+}

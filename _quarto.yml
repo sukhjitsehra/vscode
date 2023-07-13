@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Visual Studio Code (VSCode) IDE for Pyhon"
+  navbar:
+    background: primary
+    search: true
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Installations
+        menu:
+        - python.qmd
+        - vscode.qmd
+      - text: VS Code for Python
+        menu:
+        - python_extensions.qmd
+        - running.qmd
+    aria-label: true
+
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+
+
