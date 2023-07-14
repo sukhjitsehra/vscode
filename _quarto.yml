@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Visual Studio Code (VSCode) IDE for Pyhon"
+  title: "Visual Studio Code (VSCode) IDE for Python"
   navbar:
     background: primary
     search: true
@@ -27,6 +27,6 @@ format:
     theme: flatly
     css: styles.css
     toc: true
-
+bibliography: references.bib
 
 
