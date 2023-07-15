@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Visual Studio Code (VSCode) IDE for Pyhon – running</title>
+<title>Visual Studio Code (VSCode) IDE for Python – running</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,25 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
 }
 </style>
 
@@ -70,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Visual Studio Code (VSCode) IDE for Pyhon</span>
+    <span class="navbar-title">Visual Studio Code (VSCode) IDE for Python</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -134,6 +153,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#via-terminal" id="toc-via-terminal" class="nav-link" data-scroll-target="#via-terminal">Via Terminal:</a></li>
   <li><a href="#via-run-button" id="toc-via-run-button" class="nav-link" data-scroll-target="#via-run-button">Via Run Button:</a></li>
   </ul></li>
+  <li><a href="#adding-docsrting-to-your-program" id="toc-adding-docsrting-to-your-program" class="nav-link" data-scroll-target="#adding-docsrting-to-your-program">Adding Docsrting to your Program</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -146,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="getting-started-with-vs-code" class="level1">
 <h1>Getting Started with VS Code</h1>
 <ul>
-<li><p>Open VS Code and then use <code>File &gt; Open Folder</code> to open the project folder e.g.&nbsp;<code>hello-world</code> folder on your computer.</p></li>
+<li><p>Open VS Code and then use <code>File &gt; Open Folder</code> to open the project folder e.g.&nbsp;<code>hello-world</code> folder on your computer (<span class="citation" data-cites="MicrosoftPythonVSCode2023">Microsoft Learn (<a href="#ref-MicrosoftPythonVSCode2023" role="doc-biblioref">2023</a>)</span>).</p></li>
 <li><p>Now, in the <code>Explorer view</code>: hover over the title bar and select <code>New File</code>.</p></li>
 <li><p>Name the new file <code>hello.py</code> by entering it into the new toolbox and pressing <code>Enter</code>.</p></li>
 <li><p>Enter the <code>print('Hello, World!')</code> Python code in the editor panel. This command uses the print function to display the text Hello, World! when your application is run.</p></li>
@@ -172,13 +192,48 @@ ul.task-list li input[type="checkbox"] {
 <li>Click the <code>Run Python File in Terminal</code> <strong>play button</strong> in the top-right side of the editor and <code>Hello, World!</code> appears in the terminal window.</li>
 </ol>
 <p>Congratulations! For your first Python program.</p>
+</section>
+</section>
+<section id="adding-docsrting-to-your-program" class="level2">
+<h2 class="anchored" data-anchor-id="adding-docsrting-to-your-program">Adding Docsrting to your Program</h2>
+<p>There are several formats to add to add documentation to your program, some most popular ones are:</p>
+<ul>
+<li>google</li>
+<li>sphinx</li>
+<li>pep257</li>
+</ul>
+<p>We will use a custom.template to add documentation to your program. Download the <a href="custom.mustache">custom template</a> and follow the steps to add it to VS code.</p>
+<ol type="1">
+<li><p>After downloading the custom.mustache file, open the <code>Settings editor</code>, use the following VS Code menu command:</p>
+<ul>
+<li>On Windows/Linux - File &gt; Preferences &gt; Settings</li>
+<li>On macOS - Code &gt; Preferences &gt; Settings</li>
+</ul></li>
+<li><p>When you open the Settings editor, you can search and discover the settings to look for <code>AutoDocString</code>.</p></li>
+<li><p>Find the option: <code>Auto Docstring: Custom Template Path</code> and enter the file path to custom docstring template file <code>custom.mustache</code> (File path can be absolute or relative to the project root.)</p></li>
+<li><p>To add the docstring, first create the function e.g.&nbsp;a python function to add two integer values, as given below:</p>
+<pre><code>def add_two_values(x, y):
+return x + y</code></pre>
+<ul>
+<li><p>To generate the docstring, place the cursor in the line directly below the function definition (i.e.&nbsp;below the def keyword) and perform any one of the following steps:</p></li>
+<li><p>Start the docstring with either triple double or triple single quotes and press the Enter key</p></li>
+<li><p>Use keyboard shortcut <code>CTRL+SHIFT+2</code> for windows or <code>CMD+SHIFT+2</code> for macOS.</p>
+<p><img src="custom.gif" class="img-fluid"></p></li>
+<li><p>This will populate the function body in the following manner. The <em>description</em>, <em>usage</em>, and <em>type</em> are placeholders that we need to replace with actual descriptions.</p></li>
+<li><p>autoDocString can populate the <em>type</em> placeholder automatically by inferring parameter types</p></li>
+</ul></li>
+</ol>
+
 
 
 </section>
 </section>
-</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-MicrosoftPythonVSCode2023" class="csl-entry" role="doc-biblioentry">
+Microsoft Learn. 2023. <span>“Python in Visual Studio Code.”</span> <a href="https://learn.microsoft.com/en-us/training/modules/python-install-vscode/2-python-programming-language">https://learn.microsoft.com/en-us/training/modules/python-install-vscode/2-python-programming-language</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
