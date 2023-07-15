@@ -35,7 +35,7 @@ There are several formats to add to add documentation to your program, some most
 - sphinx
 - pep257
 
-We will use a custom.template to  add documentation to your program. Download the [custom template](custom.mustache) and follow the steps to add it to VS code. 
+We will use a custom.template to  add documentation to your program. Download the [custom template](custom.mustache) (right-click and save) and follow the steps to add it to VS code. 
 
 1. After downloading the custom.mustache file, open the `Settings editor`, use the following VS Code menu command:
     - On Windows/Linux - File > Preferences > Settings
