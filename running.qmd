@@ -54,7 +54,7 @@ We will use a custom.template to  add documentation to your program. Download th
    - Start the docstring with either triple double or triple single quotes and press the Enter key
    - Use keyboard shortcut `CTRL+SHIFT+2` for windows or `CMD+SHIFT+2` for macOS.
 
-       ![](custom.gif)
+       {{< video autodocstring.mov >}}
 
    - This will populate the function body in the following manner. The _description_, _usage_, and _type_ are placeholders that we need to replace with actual descriptions.
 

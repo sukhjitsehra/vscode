@@ -1,13 +1,13 @@
-# Installation of Python Extensions for VS Code
+# Installation of Python Extensions for VSCode
 
 ## Python Extension
-The Python extension for Visual Studio Code provides visual cues, such as color coding and autocomplete, and debugging tools to help you write better Python code, and to write code faster. To install the Python extension in VS Code:
+The Python extension for VSCode provides visual cues, such as color coding and autocomplete, and debugging tools to help you write better Python code, and to write code faster. To install the Python extension in VSCode:
 
-1. In Visual Studio Code, select View -> Extensions to open Extensions View. It will display all the extensions available for VS Code.
+1. In VSCode, select View -> Extensions to open Extensions View. It will display all the extensions available for VSCode.
 2. Type Python to filter extensions to find required extension. Select `Python` published by Microsoft (described as IntelliSense (Pylance)) and select `Install`. 
 
 ::: {.callout-note} 
-After you install the `Python` extension, you may see a dialog box that asks you whether you want to install the `command line developer tools`. You should select `Install`. You'll need to agree to the Command Line Tools License Agreement. This installation process may take sometime to complete. After the installation is complete, a dialog box appears stating that the software is installed. Select Done to proceed.
+After you install the `Python` extension, you may see a dialog box that asks you whether you want to install the `command line developer tools`. You should select `Install`. You'll need to agree to the `Command Line Tools License Agreement`. This installation process may take sometime to complete. After the installation is complete, a dialog box appears stating that the software is installed. Select `Done` to proceed.
 ::: 
 
 ##  autoDocstring Extension

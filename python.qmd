@@ -4,8 +4,7 @@
 
 Before you can begin writing Python code, you'll need the Python interpreter that compiles and runs your code, and a code editor with features that can help you write Python code. 
 
-
-We will be using Python 3 for this course, so to check, Python 3 installed on my computer, already, follow the instrations for your Operating System:
+We will be using Python 3 for this course, so to check, Python 3 installed on my computer already, and follow the instructions for your Operating System:
 
 ::: {.panel-tabset}
 
@@ -84,7 +83,7 @@ Make sure that you have admin access for installing the latest version of the Py
 The system install of Python on macOS is not supported. Instead, a package management system like `Homebrew` is recommended. To install Python using Homebrew on macOS use `brew install python3` at the Terminal prompt.
 
 ::: {.callout-note} 
-On macOS, make sure the location of your VS Code installation is included in your PATH environment variable.
+On macOS, make sure the location of your VSCode installation is included in your PATH environment variable.
 ::: 
 
 ## Linux

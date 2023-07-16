@@ -57,6 +57,8 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -123,7 +125,7 @@ div.csl-indent {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-vs-code-for-python">    
         <li>
     <a class="dropdown-item" href="./python_extensions.html">
- <span class="dropdown-text">Installation of Python Extensions for VS Code</span></a>
+ <span class="dropdown-text">Installation of Python Extensions for VSCode</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./running.html">
@@ -218,7 +220,7 @@ return x + y</code></pre>
 <li><p>To generate the docstring, place the cursor in the line directly below the function definition (i.e.&nbsp;below the def keyword) and perform any one of the following steps:</p></li>
 <li><p>Start the docstring with either triple double or triple single quotes and press the Enter key</p></li>
 <li><p>Use keyboard shortcut <code>CTRL+SHIFT+2</code> for windows or <code>CMD+SHIFT+2</code> for macOS.</p>
-<p><img src="custom.gif" class="img-fluid"></p></li>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="autodocstring.mov"></video></div></li>
 <li><p>This will populate the function body in the following manner. The <em>description</em>, <em>usage</em>, and <em>type</em> are placeholders that we need to replace with actual descriptions.</p></li>
 <li><p>autoDocString can populate the <em>type</em> placeholder automatically by inferring parameter types</p></li>
 </ul></li>
@@ -368,6 +370,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

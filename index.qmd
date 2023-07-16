@@ -1,6 +1,6 @@
 # Introduction
 
-The programming courses use the Visual Studio Code (VSCode) IDE (Integrated Development Environment) to create programs in Python. VSCode is a versatile editor that supports extensions, allowing development in a wide range of languages. VSCode works across multiple platforms, making it a convenient tool for any developer. Best of all, it's free!
+This programming course use the Visual Studio Code (VSCode)  Integrated Development Environment (IDE) to create programs in Python. VSCode is a versatile editor that supports extensions, allowing development in a wide range of languages. VSCode works across multiple platforms, making it a convenient tool for any developer. Best of all, it's free!
 
 VSCode is a streamlined code editor with support for development operations like debugging, task running, version control, and much more. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to [full featured IDE](https://code.visualstudio.com/).
 
@@ -10,10 +10,10 @@ This document refer to the most current versions of Python, and VSCode as of thi
 
 Follow these steps to install VSCode on your own computer. 
 
--   Install Python
--   Install VSCode
--   Install Python extension in VSCode
--   Getting Started with VS Code
+1.   Install Python
+1.  Install VSCode
+1.  Install Python extension in VSCode
+1.  Getting Started with VS Code
 
 This step-by-step tutorial will guide you through installing VSCode, a popular free code editor, along with the Python extension, which will make writing Python code a more productive experience.
 
