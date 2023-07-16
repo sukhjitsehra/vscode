@@ -168,12 +168,12 @@ div.csl-indent {
 <section id="getting-started-with-vs-code" class="level1">
 <h1>Getting Started with VS Code</h1>
 <ul>
-<li><p>Open VS Code and then use <code>File &gt; Open Folder</code> to open the project folder e.g.&nbsp;<code>hello-world</code> folder on your computer (<span class="citation" data-cites="MicrosoftPythonVSCode2023">Microsoft Learn (<a href="#ref-MicrosoftPythonVSCode2023" role="doc-biblioref">2023</a>)</span>).</p></li>
+<li><p>Open VS Code and then use <code>File &gt; Open Folder</code> to open the project folder e.g.&nbsp;<code>hello-world</code> folder on your computer (<span class="citation" data-cites="VSCodePythonDocs"><span>“<span>Visual Studio Code Documentation: Python</span>”</span> (<a href="#ref-VSCodePythonDocs" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="MicrosoftPythonVSCode2023">Microsoft Learn (<a href="#ref-MicrosoftPythonVSCode2023" role="doc-biblioref">2023</a>)</span>).</p></li>
 <li><p>Now, in the <code>Explorer view</code>: hover over the title bar and select <code>New File</code>.</p></li>
 <li><p>Name the new file <code>hello.py</code> by entering it into the new toolbox and pressing <code>Enter</code>.</p></li>
 <li><p>Enter the <code>print('Hello, World!')</code> Python code in the editor panel. This command uses the print function to display the text Hello, World! when your application is run.</p></li>
 <li><p>Save the file by selecting File and save option.</p></li>
-<li><p>Now, you are ready to explore and code fun in VSCode.</p></li>
+<li><p>Now, you are ready to explore the coding fun in VSCode.</p></li>
 </ul>
 <section id="run-your-application" class="level2">
 <h2 class="anchored" data-anchor-id="run-your-application">Run your application</h2>
@@ -198,7 +198,7 @@ div.csl-indent {
 </section>
 <section id="adding-docsrting-to-your-program" class="level2">
 <h2 class="anchored" data-anchor-id="adding-docsrting-to-your-program">Adding Docsrting to your Program</h2>
-<p>There are several formats to add to add documentation to your program, some most popular ones are:</p>
+<p>There are several formats to add to add documentation to your program, some most popular ones are (<span class="citation" data-cites="AutodocstringExtension">Nils Werner (<a href="#ref-AutodocstringExtension" role="doc-biblioref">2023</a>)</span>):</p>
 <ul>
 <li>google</li>
 <li>sphinx</li>
@@ -206,12 +206,27 @@ div.csl-indent {
 </ul>
 <p>We will use a custom.template to add documentation to your program. Download the <a href="custom.mustache">custom template</a> (right-click and save) and follow the steps to add it to VS code.</p>
 <ol type="1">
-<li><p>After downloading the custom.mustache file, open the <code>Settings editor</code>, use the following VS Code menu command:</p>
+<li>After downloading the custom.mustache file, open the <code>Settings editor</code>, use the following VS Code menu command:
 <ul>
 <li>On Windows/Linux - File &gt; Preferences &gt; Settings</li>
 <li>On macOS - Code &gt; Preferences &gt; Settings</li>
 </ul></li>
-<li><p>When you open the Settings editor, you can search and discover the settings to look for <code>AutoDocString</code>.</p></li>
+<li>When you open the Settings editor, you can search and discover the settings to look for <code>AutoDocstring</code>.</li>
+</ol>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you cannot find the AutoDocstring in the settings, you missed installing the AutoDocstring extension, so go back to <a href="python_extensions.html">previous page</a> for instructions.</p>
+</div>
+</div>
+<ol start="3" type="1">
 <li><p>Find the option: <code>Auto Docstring: Custom Template Path</code> and enter the file path to custom docstring template file <code>custom.mustache</code> (File path can be absolute or relative to the project root.)</p></li>
 <li><p>To add the docstring, first create the function e.g.&nbsp;a python function to add two integer values, as given below:</p>
 <pre><code>def add_two_values(x, y):
@@ -234,6 +249,12 @@ return x + y</code></pre>
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-MicrosoftPythonVSCode2023" class="csl-entry" role="doc-biblioentry">
 Microsoft Learn. 2023. <span>“Python in Visual Studio Code.”</span> <a href="https://learn.microsoft.com/en-us/training/modules/python-install-vscode/2-python-programming-language">https://learn.microsoft.com/en-us/training/modules/python-install-vscode/2-python-programming-language</a>.
+</div>
+<div id="ref-AutodocstringExtension" class="csl-entry" role="doc-biblioentry">
+Nils Werner. 2023. <span>“<span>AutoDocstring - Visual Studio Code Extension</span>.”</span> <a href="https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring" class="uri">https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring</a>.
+</div>
+<div id="ref-VSCodePythonDocs" class="csl-entry" role="doc-biblioentry">
+<span>“<span>Visual Studio Code Documentation: Python</span>.”</span> 2023. <a href="https://code.visualstudio.com/docs/languages/python" class="uri">https://code.visualstudio.com/docs/languages/python</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

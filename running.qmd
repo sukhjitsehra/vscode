@@ -1,13 +1,13 @@
 # Getting Started with VS Code
 
-- Open VS Code and then use `File > Open Folder` to open the project folder e.g. `hello-world` folder on your computer (@MicrosoftPythonVSCode2023).
+- Open VSCode and then use `File > Open Folder` to open the project folder e.g. `hello-world` folder on your computer (@VSCodePythonDocs, @MicrosoftPythonVSCode2023).
 - Now, in the `Explorer view`: hover over the title bar and select `New File`.
 - Name the new file `hello.py` by entering it into the new toolbox and pressing `Enter`.
 - Enter the `print('Hello, World!')` Python code in the editor panel. This command uses the print function to display the text Hello, World! when your application is run.
 
 - Save the file by selecting File and save option.
 
-- Now, you are ready to explore and code fun in VSCode. 
+- Now, you are ready to explore the coding fun in VSCode. 
 
 ## Run your application
 Since it's a single line program, you can actually run your application from inside VSCode. Before that select the Python interpreter, by opening the `Command Palette (Shift + Command + P (Mac) / Ctrl + Shift + P (Windows/Linux))`, start typing the `> Python: Select Interpreter` command to choose the Python interpreter or enter the Path  to the Python interpreter. 
@@ -29,18 +29,22 @@ Congratulations! For your first Python program.
 
 ## Adding Docsrting to your Program
 
-There are several formats to add to add documentation to your program, some most popular ones are:
+There are several formats to add to add documentation to your program, some most popular ones are (@AutodocstringExtension):
 
 - google
 - sphinx
 - pep257
 
-We will use a custom.template to  add documentation to your program. Download the [custom template](custom.mustache) (right-click and save) and follow the steps to add it to VS code. 
+We will use a custom.template to  add documentation to your program. Download the [custom template](custom.mustache) (right-click and save) and follow the steps to add it to VSCode. 
 
-1. After downloading the custom.mustache file, open the `Settings editor`, use the following VS Code menu command:
+1. After downloading the custom.mustache file, open the `Settings editor`, use the following VSCode menu command:
     - On Windows/Linux - File > Preferences > Settings
     - On macOS - Code > Preferences > Settings
-2. When you open the Settings editor, you can search and discover the settings to look for `AutoDocString`.
+2. When you open the Settings editor, you can search and discover the settings to look for `AutoDocstring`.
+
+:::{.callout-warning}
+If you cannot find the AutoDocstring in the settings, you missed installing the AutoDocstring extension, so go back to [previous page](python_extensions.html) for instructions.
+:::
 3. Find the option: `Auto Docstring: Custom Template Path` and enter the file path to custom docstring template file `custom.mustache` (File path can be absolute or relative to the project root.)
 4. To add the docstring, first create the function e.g. a python function to add two integer values, as given below:
 

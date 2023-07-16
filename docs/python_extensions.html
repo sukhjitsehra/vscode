@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -144,10 +163,10 @@ ul.task-list li input[type="checkbox"] {
 <h1>Installation of Python Extensions for VSCode</h1>
 <section id="python-extension" class="level2">
 <h2 class="anchored" data-anchor-id="python-extension">Python Extension</h2>
-<p>The Python extension for VSCode provides visual cues, such as color coding and autocomplete, and debugging tools to help you write better Python code, and to write code faster. To install the Python extension in VSCode:</p>
+<p>The Python extension for VSCode provides visual cues, such as color coding and autocomplete, and debugging tools to help you write better Python code, and to write code faster (<span class="citation" data-cites="VSCodePythonDocs"><span>“<span>Visual Studio Code Documentation: Python</span>”</span> (<a href="#ref-VSCodePythonDocs" role="doc-biblioref">2023</a>)</span>). To install the Python extension in VSCode:</p>
 <ol type="1">
-<li>In VSCode, select View -&gt; Extensions to open Extensions View. It will display all the extensions available for VSCode.</li>
-<li>Type Python to filter extensions to find required extension. Select <code>Python</code> published by Microsoft (described as IntelliSense (Pylance)) and select <code>Install</code>.</li>
+<li>In VSCode, select View -&gt; Extensions or press Ctrl+Shift+X (Cmd+Shift+X on macOS) to open the Extensions view. It will display all the extensions available for VSCode.</li>
+<li>In search bar at the top of the Extensions view, type Python to filter extensions to find required extension. Select <code>Python</code> published by Microsoft (described as IntelliSense (Pylance)) and select <code>Install</code>.</li>
 </ol>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -165,16 +184,28 @@ Note
 </section>
 <section id="autodocstring-extension" class="level2">
 <h2 class="anchored" data-anchor-id="autodocstring-extension">autoDocstring Extension</h2>
-<p><code>Docstrings</code> help understand code functionality and are essential for writing clean and well-documented programs. This <code>extension</code> will assist you in automatically creating default documentation whenever you create a new a Python function.</p>
-<ul>
-<li>The <a href="https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring">autoDocstring extension</a> helps us quickly generate docstring for Python functions. By typing triple quotes ““” or ’’’ within the function, we can generate and modify docstring.</li>
-</ul>
+<p><code>Docstrings</code> help understand code functionality and are essential for writing clean and well-documented programs. This <code>extension</code> will assist you in automatically creating default documentation whenever you create a new a Python function (<span class="citation" data-cites="AutodocstringExtension">Nils Werner (<a href="#ref-AutodocstringExtension" role="doc-biblioref">2023</a>)</span>).</p>
+<p>The <a href="https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring">autoDocstring extension</a> helps us quickly generate docstring for Python functions. By typing triple quotes ““” or ’’’ within the function, we can generate and modify docstring.</p>
+<ol type="1">
+<li>In VSCode, select View -&gt; Extensions or press Ctrl+Shift+X (Cmd+Shift+X on macOS) to open the Extensions view. It will display all the extensions available for VSCode.</li>
+<li>In the search bar at the top of the Extensions view, type “AutoDocString”.</li>
+<li>From the search results, locate the “AutoDocString” extension by Nils Werner and select “Install”.</li>
+<li>After installation, the button will change to “Reload” - click on it to reload Visual Studio Code and activate the extension.</li>
+</ol>
+
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-AutodocstringExtension" class="csl-entry" role="doc-biblioentry">
+Nils Werner. 2023. <span>“<span>AutoDocstring - Visual Studio Code Extension</span>.”</span> <a href="https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring" class="uri">https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring</a>.
+</div>
+<div id="ref-VSCodePythonDocs" class="csl-entry" role="doc-biblioentry">
+<span>“<span>Visual Studio Code Documentation: Python</span>.”</span> 2023. <a href="https://code.visualstudio.com/docs/languages/python" class="uri">https://code.visualstudio.com/docs/languages/python</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

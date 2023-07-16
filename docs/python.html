@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -144,27 +163,25 @@ ul.task-list li input[type="checkbox"] {
 <h1>Python Installation</h1>
 <section id="check-current-python-version" class="level2">
 <h2 class="anchored" data-anchor-id="check-current-python-version">Check current Python version</h2>
-<p>Before you can begin writing Python code, you’ll need the Python interpreter that compiles and runs your code, and a code editor with features that can help you write Python code.</p>
-<p>We will be using Python 3 for this course, so to check, Python 3 installed on my computer already, and follow the instructions for your Operating System:</p>
+<p>Python interpreter that compiles and runs your code. For this course, we will be using <code>Python 3</code>, so to check, if <code>Python 3</code> is already installed on your computer and follow the instructions for your Operating System (<span class="citation" data-cites="VSCodePythonTutorial"><span>“<span>Visual Studio Code Documentation: Python Tutorial</span>”</span> (<a href="#ref-VSCodePythonTutorial" role="doc-biblioref">2023</a>)</span>):</p>
 <div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">macOS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Linux</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>To determine if your Windows computer already has Python 3:</p>
+<p>To determine if your Windows computer already has <code>Python 3</code>:</p>
 <ol type="1">
-<li><p>To open the <strong>Command Prompt</strong> app, go to <strong>Start</strong> on the Windows Taskbar.</p></li>
+<li><p>Go to <strong>Start</strong> on the Windows Taskbar to open the <strong>Command Prompt</strong> app.</p></li>
 <li><p>Enter <strong>cmd</strong> in the Windows search box and select the <strong>Command Prompt App</strong> in the <strong>Best match</strong> results.</p></li>
-<li><p>Enter the following command and then press Enter:</p>
+<li><p>At the command prompt, enter the following command and then press Enter:</p>
 <blockquote class="blockquote">
 <p>python –version</p>
 </blockquote></li>
 </ol>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>To determine if your macOS computer already has Python 3 installed:</p>
+<p>To determine if your macOS computer already has <code>Python 3</code> installed:</p>
 <ol type="1">
 <li><p>Open the Terminal app by pressing <code>Command + Spacebar key</code> combination to search by using Spotlight.</p></li>
-<li><p>In the search box, enter <strong>Terminal</strong>. In the results set select <strong>Terminal app</strong>, and then press Return to start the app.</p></li>
 <li><p>At the command prompt, enter the following command:</p></li>
 </ol>
 <blockquote class="blockquote">
@@ -172,10 +189,10 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Python is pre-installed on most Linux distributions (like Ubuntu). To determine if your Linux computer already has Python 3 installed:</p>
+<p>Python is pre-installed on most Linux distributions (like Ubuntu). To determine if your Linux computer already has <code>Python 3</code> installed:</p>
 <ol type="1">
 <li><p>Open a Linux terminal session.</p></li>
-<li><p>Enter the following command and then press Enter.</p></li>
+<li><p>At the command prompt, enter the following command and then press Enter:</p></li>
 </ol>
 <blockquote class="blockquote">
 <p>python –version</p>
@@ -184,29 +201,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="{callout-note}">
-<p>Running <code>python --version</code> may not return a value, or may return an error message stating <em>‘python’ is not recognized as an internal or external command, operable program or batch file.</em> This indicates Python is not installed on your Windows system.</p>
+<p>Running <code>python --version</code> may not return a value, or may return an error message stating <em>‘python’ is not recognized as an internal or external command, operable program or batch file.</em> This indicates Python is not installed on your system.</p>
 <p>But, if you see the word <code>Python</code> with a set of numbers separated by <code>.</code> characters, some version of Python is installed. Here’s an example of the output you might see:</p>
 <blockquote class="blockquote">
 <p>Python 3.11</p>
 </blockquote>
 </div>
-<p>As long as the first number is <code>3</code>, you have Python 3 installed on your computer. If not, you’ll need to install Python 3. We’ll walk you through installation of Python 3 in the next section.</p>
+<p>As long as the first number is <code>3</code>, you have Python 3 installed on your computer. If not, you’ll need to install Python 3.</p>
 </section>
 <section id="installation-of-python-3" class="level2">
 <h2 class="anchored" data-anchor-id="installation-of-python-3">Installation of Python 3</h2>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>At the time of writing this document, Python 3.11 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames may differ slightly from the installation instructions.</p>
-</div>
-</div>
 <div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">macOS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Linux</a></li></ul>
 <div class="tab-content">
@@ -214,13 +218,13 @@ Note
 <ol type="1">
 <li>To install <a href="https://www.python.org/downloads/">Python from python.org</a>, use the Download Python button that appears first on the page to download the latest version.</li>
 </ol>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-Note
+Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -258,10 +262,15 @@ Note
 </div>
 
 
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-VSCodePythonTutorial" class="csl-entry" role="doc-biblioentry">
+<span>“<span>Visual Studio Code Documentation: Python Tutorial</span>.”</span> 2023. <a href="https://code.visualstudio.com/docs/python/python-tutorial" class="uri">https://code.visualstudio.com/docs/python/python-tutorial</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

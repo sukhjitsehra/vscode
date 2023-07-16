@@ -2,72 +2,63 @@
 
 ## Check current Python version
 
-Before you can begin writing Python code, you'll need the Python interpreter that compiles and runs your code, and a code editor with features that can help you write Python code. 
-
-We will be using Python 3 for this course, so to check, Python 3 installed on my computer already, and follow the instructions for your Operating System:
+Python interpreter that compiles and runs your code. For this course, we will be using `Python 3`, so to check, if `Python 3` is already installed on your computer and follow the instructions for your Operating System (@VSCodePythonTutorial):
 
 ::: {.panel-tabset}
 
 ## Windows
 
-To determine if your Windows computer already has Python 3:
+To determine if your Windows computer already has `Python 3`:
 
-1.  To open the **Command Prompt** app, go to **Start** on the Windows Taskbar.
+1.  Go to **Start** on the Windows Taskbar to open the **Command Prompt** app.
     
 2.  Enter **cmd** in the Windows search box and select the **Command Prompt App** in the **Best match** results.
     
-3.  Enter the following command and then press Enter:
+3.  At the command prompt, enter the following command and then press Enter:
     
     > python --version
 
 ## macOS
 
-To determine if your macOS computer already has Python 3 installed:
+To determine if your macOS computer already has `Python 3` installed:
 
 1.  Open the Terminal app by pressing `Command + Spacebar key` combination to search by using Spotlight.
     
-2.  In the search box, enter **Terminal**. In the results set select **Terminal app**, and then press Return to start the app.
-    
-3.  At the command prompt, enter the following command:
+2.  At the command prompt, enter the following command:
     
 > python --version
         
 
 ## Linux
 
-Python is pre-installed on most Linux distributions (like Ubuntu). To determine if your Linux computer already has Python 3 installed:
+Python is pre-installed on most Linux distributions (like Ubuntu). To determine if your Linux computer already has `Python 3` installed:
 
 1.  Open a Linux terminal session.
     
-2.  Enter the following command and then press Enter.
+2.  At the command prompt, enter the following command and then press Enter:
     
 > python --version
     
 :::
 
 :::{callout-note}
-Running `python --version` may not return a value, or may return an error message stating _'python' is not recognized as an internal or external command, operable program or batch file._ This indicates Python is not installed on your Windows system.
+Running `python --version` may not return a value, or may return an error message stating _'python' is not recognized as an internal or external command, operable program or batch file._ This indicates Python is not installed on your system.
 
 But, if you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed. Here's an example of the output you might see:
     
 > Python 3.11
 :::
 
-As long as the first number is `3`, you have Python 3 installed on your computer. If not, you'll need to install Python 3. We'll walk you through installation of Python 3 in the next section.
-
+As long as the first number is `3`, you have Python 3 installed on your computer. If not, you'll need to install Python 3. 
 
 ## Installation of Python 3
-
-::: {.callout-note}
-At the time of writing this document, Python 3.11 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames may differ slightly from the installation instructions.
-:::
 
 ::: {.panel-tabset}
 
 ## Windows
 1. To install [Python from python.org](https://www.python.org/downloads/), use the Download Python button that appears first on the page to download the latest version.
 
-::: {.callout-note} 
+::: {.callout-important} 
 Make sure that you have admin access for installing the latest version of the Python on Windows.
 ::: 
 

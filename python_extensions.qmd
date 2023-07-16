@@ -1,10 +1,10 @@
 # Installation of Python Extensions for VSCode
 
 ## Python Extension
-The Python extension for VSCode provides visual cues, such as color coding and autocomplete, and debugging tools to help you write better Python code, and to write code faster. To install the Python extension in VSCode:
+The Python extension for VSCode provides visual cues, such as color coding and autocomplete, and debugging tools to help you write better Python code, and to write code faster (@VSCodePythonDocs). To install the Python extension in VSCode:
 
-1. In VSCode, select View -> Extensions to open Extensions View. It will display all the extensions available for VSCode.
-2. Type Python to filter extensions to find required extension. Select `Python` published by Microsoft (described as IntelliSense (Pylance)) and select `Install`. 
+1. In VSCode, select View -> Extensions or press Ctrl+Shift+X (Cmd+Shift+X on macOS) to open the Extensions view. It will display all the extensions available for VSCode.
+2. In search bar at the top of the Extensions view, type Python to filter extensions to find required extension. Select `Python` published by Microsoft (described as IntelliSense (Pylance)) and select `Install`. 
 
 ::: {.callout-note} 
 After you install the `Python` extension, you may see a dialog box that asks you whether you want to install the `command line developer tools`. You should select `Install`. You'll need to agree to the `Command Line Tools License Agreement`. This installation process may take sometime to complete. After the installation is complete, a dialog box appears stating that the software is installed. Select `Done` to proceed.
@@ -12,9 +12,14 @@ After you install the `Python` extension, you may see a dialog box that asks you
 
 ##  autoDocstring Extension
 
-`Docstrings` help understand code functionality and are essential for writing clean and well-documented programs. This `extension` will assist you in automatically creating default documentation whenever you create a new a Python function. 
+`Docstrings` help understand code functionality and are essential for writing clean and well-documented programs. This `extension` will assist you in automatically creating default documentation whenever you create a new a Python function (@AutodocstringExtension). 
 
-- The [autoDocstring extension](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) helps us quickly generate docstring for Python functions. By typing triple quotes """ or ''' within the function, we can generate and modify docstring. 
+The [autoDocstring extension](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) helps us quickly generate docstring for Python functions. By typing triple quotes """ or ''' within the function, we can generate and modify docstring. 
+
+1. In VSCode, select View -> Extensions or press Ctrl+Shift+X (Cmd+Shift+X on macOS) to open the Extensions view. It will display all the extensions available for VSCode.
+2. In the search bar at the top of the Extensions view, type "AutoDocString".
+3. From the search results, locate the "AutoDocString" extension by Nils Werner and select "Install".
+4. After installation, the button will change to "Reload" - click on it to reload Visual Studio Code and activate the extension.
 
 
 
