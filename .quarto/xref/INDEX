@@ -25,5 +25,29 @@
   },
   "references.qmd": {
     "references.html": "2d9b34a5"
+  },
+  "linux.qmd": {
+    "linux.html": "5d01900c"
+  },
+  "Software_Tools/software/index.qmd": {
+    "index.html": "0d4277b0"
+  },
+  "linux_docker.qmd": {
+    "linux_docker.html": "b2c6c67c"
+  },
+  "linux_wsl2.qmd": {
+    "linux_wsl2.html": "4a5784e5"
+  },
+  "eclipse.qmd": {
+    "eclipse.html": "027f2ce4"
+  },
+  "hoppper.qmd": {
+    "hoppper.html": "045a7cfa"
+  },
+  "hopper.qmd": {
+    "hopper.html": "3b642cf2"
+  },
+  "virtualbox.qmd": {
+    "virtualbox.html": "92b0d7b0"
   }
 }

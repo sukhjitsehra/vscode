@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Visual Studio Code (VSCode) IDE for Python"
+  title: "Software Installation"
   navbar:
     background: primary
     search: true
@@ -11,14 +11,15 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: Installations
+      - text: Linux installation
         menu:
-        - python.qmd
+        - linux_wsl2.qmd
+        - linux_docker.qmd
+
+      - text: IDE installation
+        menu:
         - vscode.qmd
-      - text: VS Code for Python
-        menu:
-        - python_extensions.qmd
-        - running.qmd
+        - eclipse.qmd
     aria-label: true
 
 

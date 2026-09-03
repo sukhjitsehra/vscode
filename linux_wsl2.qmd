@@ -1,0 +1,36 @@
+# Linux Installation using WSL2 
+
+:::{.callout-important}
+
+This is preferred Method for Windows
+:::
+
+One of preferred methods to install Linux on Windows is via installing Windows Subsystem for Linux (WSL). Windows Subsystem for Linux (WSL) allows you to install a complete Ubuntu terminal environment in minutes on your Windows machine, allowing you to develop cross-platform applications without leaving Windows (@wsl10).
+
+<!-- ::: {.panel-tabset} -->
+
+## Windows 10 and Windows 11
+
+- `Install WSL`:  Search for Windows PowerShell in your Windows search bar, then select Run as administrator. At the command prompt type: `wsl --install`. Once the process is complete, restart your computer.
+- `Download Ubuntu`: Open the `Microsoft store app` and search for Ubuntu of your choice (Ubuntu 22.04.2 LTS).  Click on Get and Ubuntu will then install on your machine.
+- `Configure Ubuntu`: Open Ubuntu terminal on your Windows machine. Once Ubuntu has finished its initial setup you will need to create a username and password (this does not need to match your Windows user credentials).
+
+- Next, in the Ubuntu terminal run the command `sudo apt update` and followed by `sudo apt upgrade` command (Press Y when prompted).
+
+<!-- ::: -->
+
+- Once your installation of Ubuntu is complete, Go to the Window button and search for the Ubuntu app on your computer.  Install the following packages using command `sudo apt install package_name` on the machine via the Terminal:
+
+  - gcc
+  - make
+  - java 8
+  - python
+  - ssh
+
+:::{.callout-note}
+WSL2 for Windows 11 (@wsl11) comes with WSLg enabled by default. WSLg allows you to run graphical linux applications. For more information, please [click here](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support).
+:::
+
+:::{.callout-important}
+If Ubuntu returns an error during this initial installation, then the most common issue is that virtualization is disabled in your device’s BIOS menu. You will need to turn this on during your device’s boot sequence. The location of this option varies by manufacturer, so you will need to refer to their documentation to find it.
+:::

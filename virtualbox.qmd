@@ -1,0 +1,104 @@
+# Installing Ubuntu Linux on VirtualBox
+
+## 1. Install VirtualBox
+
+Download and install the latest stable version of **Oracle VirtualBox** from:
+
+https://www.virtualbox.org/wiki/Downloads
+
+Select the installer for your operating system and complete the installation using the default settings.
+
+## 2. Download Ubuntu Linux Appliance
+
+::: {.panel-tabset}
+
+## For Windows / Intel Mac
+
+Download **Ubuntu 24.04 Noble Numbat (64-bit) VirtualBox Appliance (.ova)** from OSBoxes:
+
+https://www.osboxes.org/ubuntu/
+
+Navigate to the [Ubuntu 24.04 Noble Numbat VirtualBox appliance](https://sourceforge.net/projects/osboxes/files/v/vb/55-U-u/OVA-Versions/24.04/Ubuntu-24.04-64bit-VB.ova/download) and download the `.ova` version. If the downloaded file is compressed, extract it first.
+
+### Import Ubuntu into VirtualBox
+
+Open VirtualBox and select **File → Import Appliance**. Browse to the downloaded `.ova` file, select it, and follow the instructions to import the virtual machine.
+
+Alternatively, double-click the `.ova` file and VirtualBox should automatically open the appliance import window.
+
+Keep the default settings unless instructed otherwise. After the import is complete, select the Ubuntu virtual machine and click **Start**.
+
+The default OSBoxes credentials are typically:
+
+```text
+Username: osboxes
+Password: osboxes.org
+root user password: osboxes.org
+```
+
+## For Apple Silicon Mac
+
+Students using an Apple Silicon Mac, including **M1, M2, M3, M4, or later**, cannot use the OSBoxes Ubuntu 24.04 `.ova` appliance because that appliance is built for the **x86-64 (Intel/AMD)** architecture. VirtualBox on an Apple Silicon host can run **ARM64 guests only**. [download.virtualbox.org](download.virtualbox.org)
+
+### Download Ubuntu 24.04 LTS ARM64
+
+Download the **Ubuntu 24.04 LTS ARM64** ISO. Ubuntu provides an official ARM64 image specifically for 64-bit ARM processors.
+
+For this course, the **Ubuntu Desktop ARM64** image is recommended because the required work can be completed from the Linux command line.
+
+[Download Ubuntu 24.04 ARM64](https://cdimage.ubuntu.com/ubuntu/releases/24.04/release/ubuntu-24.04.4-desktop-arm64.iso)
+
+Download the file ending in:
+
+```text
+ubuntu-24.04.4-desktop-arm64.iso
+```
+
+Do **not** download the `amd64` version.
+
+### Create the Ubuntu Virtual Machine
+
+Open VirtualBox and click **New**. Enter a name such as `Ubuntu 24.04 ARM64`, VM Folder as is, and select the downloaded ARM64 ISO as the installation media. Configure the virtual machine with approximately **4 GB RAM**, **2 processor cores**, and at least **25 GB of disk space**.
+
+Start the virtual machine and follow the Ubuntu installation instructions. Create a username and password when prompted. The installation is performed manually because VirtualBox's unattended installation is not currently supported for ARM guests. 
+
+After installation is complete, restart the virtual machine and log in using the username and password you created.
+
+Once it is open click option to Try or install Ubuntu, then select **Install Ubuntu**. Follow the installation instructions to complete the setup (it will take a couple of minutes).
+
+::: 
+
+
+## 3. Install Required Development Tools
+
+After logging into Ubuntu, open a Terminal and update the package list:
+
+```bash
+sudo apt update
+```
+
+Install GCC, G++, Make, Java, Python 3, pip, SSH, and Git:
+
+```bash
+sudo apt install build-essential openjdk-21-jdk python3 python3-pip openssh-client git -y
+```
+
+The `build-essential` package includes commonly required C/C++ development tools such as **GCC, G++, and Make**.
+
+## 4. Verify the Installation
+
+Run:
+
+```bash
+gcc --version
+g++ --version
+make --version
+java -version
+javac -version
+python3 --version
+pip3 --version
+ssh -V
+git --version
+```
+
+If each command displays version information, the Ubuntu development environment is ready for the course.

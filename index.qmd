@@ -1,17 +1,17 @@
-# Introduction
+# Software Installation
 
-This programming course will use the Visual Studio Code (VSCode)  Integrated Development Environment (IDE) to create programs in Python. VSCode is a versatile editor that supports extensions, allowing development in a wide range of languages. VSCode works across multiple platforms, making it a convenient tool for any developer. Best of all, it's free!
-
-VSCode is a streamlined code editor with support for development operations like debugging, task running, version control, and much more. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to [full featured IDE](https://code.visualstudio.com/).
+For the course and assignments, we would be using a Linux Operating System and an `IDE` to write `C` programs, So let’s start with deploying `Linux` on your host operating system (if you are already using Linux, then you can skip the following text). There are various methods to install `Linux,` and you can choose either that works best for you and is compatible with your operating system (OS).
 
 :::{.callout-note}
-This document refer to the most current versions of Python, and VSCode as of this writing. Note that different computer setups and different versions means that the appearance of the screen shots in these documents may not match exactly your computer system.
+This document refers to the most current versions of `IDEs` as of this writing. Note that different computer setups and different versions mean that the appearance of the screenshots in these documents may not match exactly your computer system.
 :::
 
-Following steps will assist you to install VSCode on your computer. 
+The following steps will assist you to install VSCode on your computer. 
 
-1.  [Install Python](python.html)
-2.  [Install VSCode](vscode.html)
-3.  [Install Python extension in VSCode](python_extensions.html)
-4.  [Getting Started with VS Code](running.html)
+<!-- 1.  [Connect to Laurier's Hopper Server using Laurier Credentials](hopper.html) -->
+1.  [Install Linux on Host OS (Windows / MAC) via VirtualBox](virtualbox.qmd)
+2.  [Install Linux operating system on Windows via WSL2](linux_wsl2.html)
+3.  [Install Linux operating system on (Windows / MAC) via Dockers](linux_docker.html)
+4.  [Install VSCode](vscode.html)
+5.  [Install Eclipse](eclipse.html)
 
